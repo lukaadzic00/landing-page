@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    gap: 60px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.header-jedan {
+    font-weight: 700;
+    margin-right: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: #1F2937;
+    
+}
