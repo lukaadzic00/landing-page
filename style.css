@@ -3,16 +3,20 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* header */
+/* ------ */
+
 header {
+    padding-left: 150px;
+    padding-right: 150px;
     background-color: #1F2937;
     color: white;
     display: flex;
     gap: 60px;
-    height: 50px;
+    height: 70px;
     justify-content: center;
     align-items: center;
-    padding-left: 120px;
-    padding-right: 120px;
+    font-size: 18px;
 }
 
 .header-jedan {
@@ -25,9 +29,88 @@ a {
     text-decoration: none;
 }
 
+/* hero */
+/* ---- */
+
 .hero {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 18px;
+    box-sizing: border-box;
     background-color: #1F2937;
+    color: white;
+    height: 350px;
+    display: flex;
+}
+
+.hero button {
+    width: 130px;
+    height: 35px;
+    background-color: #3882F6;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+.left-hero p:nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.left-hero {
+    width: 50%;
+}
+
+.right-hero {
+    background-color: antiquewhite;
+    height: 100%;
+    width: 50%
+}
+
+
+/* random-information */
+/* ------------------ */
+
+.random-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    gap: 10px;
+    padding: 20px 150px 20px 150px;
+}
+
+#info {
+    margin: 0;
+    background-color: blue;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.container {
     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container div {
+    width: 170px;
+}
+
+.container p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.slika {
+    border: 5px solid #3882F6;
+    width: 100%;
+    aspect-ratio: 1;
 }
