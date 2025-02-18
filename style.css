@@ -1,14 +1,21 @@
+html, body {
+    height: 100%;       /* Obezbeđuje da body zauzme celu visinu ekrana */
+    margin: 0;          /* Uklanja default marginu */
+}
+
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
 /* ------ */
 
 header {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
     background-color: #1F2937;
     color: white;
     display: flex;
@@ -33,13 +40,13 @@ a {
 /* ---- */
 
 .hero {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
     font-size: 18px;
     box-sizing: border-box;
     background-color: #1F2937;
     color: white;
-    height: 350px;
+    padding-bottom: 15px;
     display: flex;
 }
 
@@ -55,7 +62,7 @@ a {
 }
 
 .left-hero p:nth-child(1) {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 900;
     margin: 0;
 }
@@ -65,7 +72,7 @@ a {
 }
 
 .right-hero {
-    background-color: antiquewhite;
+    background-color: rgb(131, 128, 128);
     height: 100%;
     width: 50%
 }
@@ -79,14 +86,12 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: beige;
-    gap: 10px;
-    padding: 20px 150px 20px 150px;
+    gap: 15px;
+    padding: 15px 200px 15px 200px;
 }
 
 #info {
     margin: 0;
-    background-color: blue;
     font-size: 22px;
     font-weight: 700;
 }
@@ -96,21 +101,111 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.container div {
-    width: 170px;
+.container-unutrasnji {
+    width: 180px;
 }
 
-.container p {
-    padding: 0;
+.container-unutrasnji p {
     margin: 0;
+    padding: 0;
     text-align: center;
+    margin-top: 5px;
 }
 
 .slika {
-    border: 5px solid #3882F6;
+    box-sizing: border-box;
     width: 100%;
     aspect-ratio: 1;
+    border: 4px solid #3882F6;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+}
+
+/* quote */
+/* ----- */
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #E5E7EB;
+    
+    
+}
+
+.quote p {
+    margin: 0;
+    width: 750px;
+    text-align: end;
+}
+
+.quote .jedan {
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+/* action */
+/* ------ */
+
+.action {
+    display: flex;
+    background-color: #3882F6;
+    margin-top: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: white;
+    border-radius: 10px;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.left-action {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.action p {
+    margin: 0;
+}
+
+.ucenje {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.right-action {
+    height: 40px;
+    width: 120px;
+    color: white;
+    background-color: #3882F6;
+    border: 3px solid white;
+    border-radius: 7px;
+    align-self: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* footer */
+/* ------ */
+
+.footer {
+    background-color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: white;
+    margin-top: auto;
 }
